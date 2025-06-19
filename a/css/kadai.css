@@ -1,0 +1,84 @@
+/* styles.css の例 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+/* コンテナ */
+.container {
+  display: flex;
+}
+
+/* サイドバー */
+.sidebar {
+  width: 20%;
+  background: #f4f4f4;
+  padding: 1em;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin-bottom: 0.5em;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* メインコンテンツ */
+.main-content {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+/* マップセクション */
+.map-section h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* 変更後のマッププレースホルダー */
+.map-placeholder {
+  width: 300px;         /* 固定幅 */
+  height: 300px;        /* 固定高さ */
+  background: #e4e4e4;  /* 背景色 */
+  border-radius: 50%;   /* 円形にする */
+  margin: 0 auto;       /* 中央に配置 */
+  display: flex;        /* コンテンツを中央寄せ */
+  justify-content: center;
+  align-items: center;
+}
+
+/* フッター */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
