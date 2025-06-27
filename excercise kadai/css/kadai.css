@@ -12,10 +12,15 @@ body {
 
 /* ヘッダー */
 header {
-  background: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+.site-header {
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 }
 
 /* コンテナ */
