@@ -4,15 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>板橋区 - 二郎系ラーメン店</title>
+      <link rel="stylesheet" href="css/23ku.css">
 </head>
 <body>
     <header>
         <h1>最寄り駅が板橋区のラーメン店情報</h1>
+        <h2>～ラーメン次郎三号店～<h2>
     </header>
+     <div class="container">
+    <nav class="sidebar">
+      <details open>
+        <summary>城西エリア</summary>
+        <ul>
+          <li><a href="suginami.html">杉並区</a></li>
+          <li><a href="nakano.html">中野区</a></li>
+          <li><a href="nerima.html">練馬区</a></li>
+          <li><a href="shinjuku.html">新宿区</a></li>
+          <li><a href="setagaya.html">世田谷区</a></li>
+          <li><a href="shibuya.html">渋谷区</a></li>
+        </ul>
+      </details>
+      
+      <details>
+        <summary>城東エリア</summary>
+        <ul>
+          <li><a href="taito.html">台東区</a></li>
+          <li><a href="sumida.html">墨田区</a></li>
+          <li><a href="koto.html">江東区</a></li>
+          <li><a href="chuou.html">中央区</a></li>
+          <li><a href="katsushika.html">葛飾区</a></li>
+          <li><a href="edogawa.html">江戸川区</a></li>
+        </ul>
+      </details>
+      
+      <details>
+        <summary>城南エリア</summary>
+        <ul>
+          <li><a href="meguro.html">目黒区</a></li>
+          <li><a href="shinagawa.html">品川区</a></li>
+          <li><a href="ota.html">大田区</a></li>
+          <li><a href="minato.html">港区</a></li>
+        </ul>
+      </details>
+      
+      <details>
+        <summary>城北エリア</summary>
+        <ul>
+          <li><a href="arakawa.html">荒川区</a></li>
+          <li><a href="bunkyo.html">文京区</a></li>
+          <li><a href="toshima.html">豊島区</a></li>
+          <li><a href="itabashi.html">板橋区</a></li>
+          <li><a href="adati.html">足立区</a></li>
+          <li><a href="kita.html">北区</a></li>
+        </ul>
+      </details>
+    </nav>
+    
     <main>
         <p>
             <img src="c:\Users\iniad\Downloads\IMG_4271 (1).jpeg" width="500" heigth="400">
         </p>
+        <table>
+            <tr><th>・店舗詳細</th>
+                  <!-- Google Maps JS を読み込み。YOUR_API_KEY を置き換える -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer>
+  </script>
+ <title>カスタム Google Map</title>
+  <style>
+    #map {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>店舗の場所（API版）</h1>
+  <div id="map"></div>
+
+  <!-- Google Maps JS を読み込み。YOUR_API_KEY を置き換える -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer>
+  </script>
+  <script>
+    function initMap() {
+      // 地図の中心座標（例：池袋駅）
+      var center = { lat: 35.728926, lng: 139.71038 };
+
+      // 地図オブジェクトを生成
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,           // ズームレベル
+        center: center,     // 中心座標
+        mapTypeControl: false
+      });
+
+      // マーカーを立てる
+      var marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        title: '二郎インスパイア 池袋店'
+      });
+
+      // 情報ウィンドウをつける
+      var infoWindow = new google.maps.InfoWindow({
+        content: '<strong>二郎インスパイア 池袋店</strong><br>豚骨醤油×背脂が自慢！'
+      });
+
+      // クリックで開く
+      marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+      });
+    }
+  </script>
+            <tr><td>・店内の清潔感</td><td>チェーン店ほどではないがキレイ</td></tr>
+            <tr><td>・値段</td><td>比較的安価 800円-1100円ほど</td></tr>
+            <tr><td>・店長の優しさ</td><td>優しい</td></tr>
+            <tr><td>・立地</td><td>駅から距離があり近くに駐車場がない</td></tr>
+        </table>
     </main>
     
 </body>
