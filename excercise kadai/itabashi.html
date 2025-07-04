@@ -2,10 +2,29 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>板橋区 - 二郎系ラーメン店</title>
-      <link rel="stylesheet" href="css/23ku.css">
+    <link rel="stylesheet" href="css/23ku.css">
+    <!-- Google Maps API は head 内へ一度だけ -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+          async defer></script>
 </head>
+<style>
+h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .star-rating {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .star-label {
+      font-weight: bold;
+      color: #fbc02d;
+    }
+    .star-rating {
+      text-align: center;
+    }
+  </style>
 <body>
     <header>
         <h1>最寄り駅が板橋区のラーメン店情報</h1>
@@ -62,15 +81,32 @@
     
     <main class="content">
       <h2>ラーメン次郎3号店<h2>
-        <p>
-            <img src="c:\Users\iniad\Downloads\IMG_4271 (1).jpeg" width="500" heigth="400">
-        </p>
-        <table>
+      <p><img src="c:/Users/iniad/Downloads/IMG_4271 (1).jpeg" width="500" height="400" alt="ラーメン"></p>
+      <div id="map"></div>  
+      <table>
             <tr><th>・店舗詳細</th>
                   <!-- Google Maps JS を読み込み。YOUR_API_KEY を置き換える -->
   <script
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
     async defer>
+     <section>
+      <p style="text-align: center;">
+      </p>
+      <h2 style="text-align:center;">評価</h2>
+      <div class="star-rating">
+        <span class="star-label">面の太さ：</span>★★★★☆
+      </div>
+      <div class="star-rating">
+        <span class="star-label">店の入りやすさ：</span>★★★☆☆
+      </div>
+      <div class="star-rating">
+        <span class="star-label">味の濃さ：</span>★★★★★
+      </div>
+      <div class="star-rating">
+        <span class="star-label">量：</span>★★★★☆
+      </div>
+    </section>
+
   </script>
  <title>カスタム Google Map</title>
   <style>

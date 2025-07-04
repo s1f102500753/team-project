@@ -81,3 +81,29 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* .container を flexbox にして横並びレイアウトに */
+.container {
+  display: flex;
+}
+
+/* サイドバーは固定幅 or お好みの幅を指定 */
+.sidebar {
+  flex: 0 0 240px;  /* 例：240px */
+}
+
+/* メインコンテンツは残り幅を使い、中央寄せ */
+.content {
+  flex: 1;                    /* サイドバー以外の余白を全部使う */
+  display: flex;              /* 子要素を中央揃えするため flexbox を再利用 */
+  flex-direction: column;     /* 子要素を縦に並べる */
+  align-items: center;        /* 子要素を横方向の中央に揃える */
+  text-align: center;         /* テキストノードの中央揃え */
+  padding: 20px;              /* お好みで余白 */
+}
+
+/* さらに img や table に余裕をもって中央寄せ */
+.content img,
+.content table {
+  margin: 20px auto;
+}
