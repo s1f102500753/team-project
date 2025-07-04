@@ -5,12 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>北区 - 次郎ラーメン</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #fdf6e3;
+      font-family: "Noto Sans JP", sans-serif;
+      color: #333;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .star-rating {
+      margin: 10px 0;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .star-label {
+      font-weight: bold;
+      color: #fbc02d;
+    }
+  </style>
 </head>
 <body>
-    <header><h1>北区のラーメン情報</h1></header>
-    <main>
-        <p>
-            <img src="c:\Users\iniad\Downloads\IMG_6869 (3).jpg" width="500" heigth="400">
-        </p>
-    </main>
-</body>   
+  <header>
+    <h1>北区のラーメン情報</h1>
+  </header>
+
+  <main>
+    <section>
+      <p style="text-align: center;">
+        <img src="./images/IMG_6869 (4).jpg" width="500" height="400" alt="次郎ラーメンの写真">
+      </p>
+      <h2 style="text-align:center;">評価</h2>
+      <div class="star-rating">
+        <span class="star-label">面の太さ：</span>★★★☆☆
+      </div>
+      <div class="star-rating">
+        <span class="star-label">店の入りやすさ：</span>★★★☆☆
+      </div>
+      <div class="star-rating">
+        <span class="star-label">味の濃さ：</span>★★★★☆
+      </div>
+      <div class="star-rating">
+        <span class="star-label">量：</span>★★★★★
+      </div>
+    </section>
+
+    <section>
+      <h2 style="text-align:center;">ユーザーレビュー</h2>
+      <div class="star-rating">
+        <span class="star-label">★★★★☆</span>
+        <p>量がたっぷりで満足！でもちょっと脂っこいかも。</p>
+      </div>
+      <div class="star-rating">
+        <span class="star-label">★★★☆☆</span>
+        <p>味はしっかりしているが、待ち時間が長かったです。</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
